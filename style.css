@@ -68,6 +68,7 @@
 body {
   margin: 0;
   font-family: OpenSans,'Helvetica Neue',Arial,sans-serif;
+  background-color: #222222;
 /*  background-color: black;*/
 }
 
@@ -94,6 +95,7 @@ body {
   margin-top: 60px;
   margin-bottom: -30px;
   text-align: center;
+  background-size: cover;
 }
 
 .jumbotron .container {
@@ -114,13 +116,14 @@ body {
 }
 
 
-/* MIDDLE */
+/* MIDDLE BODY */
 #middle {
   background: url(images/body-bg.jpg) no-repeat center center;
   height: auto;
   text-align: center;
   color: white;
   padding-bottom: 70px;
+  background-size: cover;
 }
 
 #divider-top {
@@ -213,6 +216,8 @@ body {
   height: 50px;
 }
 
+/* FOOTER */
+
 footer {
   text-align: center;
   margin: 0 auto;
@@ -222,6 +227,7 @@ footer #footer-content {
   height: auto;
   background: url(images/footer-bg.jpg) no-repeat center center;
   color: white;
+  background-size: cover;
 }
 
 footer #padlock-wrapper img {
@@ -244,9 +250,12 @@ footer #stamp-container img {
   padding-right: 25px;
 }
 
+/* BOTTOM NAV FOOTER */
+
 .navbar-bottom {
   background-color: #ffffff;
   height: 60px;
+  margin-bottom: 0;
 }
 
 .navbar-bottom p, li {
@@ -263,3 +272,28 @@ footer #stamp-container img {
   padding-top: 5px;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+  .jumbotron {
+    height: 600px;
+  }
+  #phone-image, #vr-image {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .jumbotron {
+    height: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .jumbotron {
+    height: 400px;
+  }
+  footer #stamp-container img {
+  padding-top: 25px;
+  }
+}
