@@ -117,12 +117,13 @@ body {
 /* MIDDLE */
 #middle {
   background: url(images/body-bg.jpg) no-repeat center center;
-  height: 1399px;
+  height: auto;
   text-align: center;
+  color: white;
+  padding-bottom: 70px;
 }
 
-#divider {
-  background-color: red;
+#divider-top {
   height: 8px;
     background: repeating-linear-gradient(
     -45deg,
@@ -154,3 +155,82 @@ body {
     #2fa02a 5px
   );
 }
+
+#samsung-galaxy-container {
+  margin-top: 70px;
+}
+
+
+.text {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.text h2 {
+  font-weight: 600;
+}
+
+.text, blockquote {
+  font-weight: 300;
+}
+
+.text blockquote {
+  border: none;
+}
+
+.text blockquote:before {
+  font-family: Georgia, serif;
+  font-size: 60pt;
+  display: block;
+  content: "\201C";
+  color: white;
+  height: 150px;
+  width: 50px;
+  float: left;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+#bottom-blockquote {
+  margin-top: 0;
+}
+
+#divider-bottom {
+  background-color: #222222;
+  height: 50px;
+}
+
+footer {
+  height: auto;
+  background: url(images/footer-bg.jpg) no-repeat center center;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+
+footer #padlock-wrapper img {
+  margin: 0 auto;
+  margin-top: -110px;
+  padding-bottom: 20px;
+}
+
+footer #footer-headline h3 {
+  font-weight: 600;
+}
+
+footer #stamp-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer #stamp-container img {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+
+
+
+
