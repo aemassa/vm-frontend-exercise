@@ -6,58 +6,58 @@
 }
 
 @font-face {
-  font-family: OpenSansBold;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
-  font-family: OpenSansBoldItalic;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-BoldItalic.ttf);
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: OpenSansExtraBold;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-ExtraBold.ttf);
   font-weight: 800;
 }
 
 @font-face {
-  font-family: OpenSansExtraBoldItalic;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-ExtraBoldItalic.ttf);
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
-  font-family: OpenSansItalic;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-Italic.ttf);
   font-style: italic;
 }
 
 @font-face {
-  font-family: OpenSansLight;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-Light.ttf);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: OpenSansLightItalic;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-LightItalic.ttf);
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: OpenSansSemibold;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-Semibold.ttf);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: OpenSansSemiboldItalic;
+  font-family: OpenSans;
   src: url(fonts/Open%20Sans/OpenSans-SemiboldItalic.ttf);
   font-weight: 600;
   font-style: italic;
@@ -66,7 +66,9 @@
 /* BODY */
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  font-family: OpenSans,'Helvetica Neue',Arial,sans-serif;
+/*  background-color: black;*/
 }
 
 /* NAVBAR */
@@ -81,7 +83,7 @@ body {
 }
 
 .navbar-fixed-top .navbar-brand {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 /* HEADER */
@@ -90,6 +92,7 @@ body {
   background: url(images/header-bg.jpg) no-repeat center center;
   height: 691px;
   margin-top: 60px;
+  margin-bottom: -30px;
   text-align: center;
 }
 
@@ -104,6 +107,50 @@ body {
   letter-spacing: 0.2em;
 }
 
-.jumbotron img {
+#image-container img {
   width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* MIDDLE */
+#middle {
+  background: url(images/body-bg.jpg) no-repeat center center;
+  height: 1399px;
+  text-align: center;
+}
+
+#divider {
+  background-color: red;
+  height: 8px;
+    background: repeating-linear-gradient(
+    -45deg,
+    #252525,
+    #252525, 2px,
+    #2e2e2e 2px,
+    #2e2e2e 5px
+  );
+}
+
+#register-button-wrapper {
+  margin-top: -28px;
+}
+
+#register-button{
+  background-color: #2fa02a;
+  border: 1px solid #2fa02a;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+  padding: 10px 50px;
+  font-size: 12pt;
+  background: repeating-linear-gradient(
+    -45deg,
+    #2D9828,
+    #2D9828, 2px,
+    #2fa02a 2px,
+    #2fa02a 5px
+  );
 }
